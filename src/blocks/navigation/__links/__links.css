@@ -1,0 +1,6 @@
+.navigation__links{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    margin: 30px 101px 26px 0;
+}

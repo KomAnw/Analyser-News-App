@@ -1,0 +1,14 @@
+@import url(../fonts/fonts.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/_page-about/_page-about.css);
+@import url(../blocks/navigation/navigation.css);
+@import url(../blocks/search/search.css);
+@import url(../blocks/about-author/about-author.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/navigation/_page-about/navigation__links_page-about.css);
+@import url(../blocks/technology/technology.css);
+
+.body{
+    margin: auto;
+    max-width: 1440px;
+}

@@ -1,0 +1,12 @@
+@import url(./__button/__button.css);
+@import url(./__field/__field.css);
+
+.search{
+    width: 608px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}

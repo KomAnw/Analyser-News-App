@@ -1,0 +1,11 @@
+@import url(./__copy/__copy.css);
+@import url(./__links/__links.css);
+@import url(./__link/__link.css);
+@import url(./__page-link/__page-link.css);
+@import url(./__social-links/__social-links.css);
+@import url(./__links-social/__links-social.css);
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}

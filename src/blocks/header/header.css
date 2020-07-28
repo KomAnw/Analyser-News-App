@@ -1,0 +1,14 @@
+@import url(./__paragraph/__paragraph.css);
+@import url(./__paragraph/_page-about/header__paragraph_page-about.css);
+@import url(./__titile/__title.css);
+@import url(./__titile/_page-about/header__title_page-about.css);
+@import url(./__texts/__texts.css);
+@import url(./__texts/_page-about/header__texts_page-about.css);
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url(../../images/header-back.jpg) no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,5 @@
+.navigation__item_active{
+    color: #FFFFFF;
+    padding-bottom: 37%;
+    border-bottom: 3px solid white;
+}

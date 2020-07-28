@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="pages/index.css">
+    <title>NewsAnalyser</title>
+</head>
+<body class="body">
+    <header class="header header_page-about">
+        <div class="navigation navigation__links_page-about">
+            <a href="./index.html" class="navigation__logo navigation__logo_page-about">NewsAnalyser</a>
+            <nav class="navigation__links">
+                <ul class="navigation__list">
+                    <li class="navigation__items">
+                        <a href="./index.html" class="navigation__item navigation__item_page-about">Главная</a>
+                    </li>
+                    <li class="navigation__items">
+                        <a href="./about.html" class="navigation__item navigation__item_page-about navigation__item_active_page-about">О Проекте</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__texts header__texts_page-about">
+            <h1 class="header__title header__title_page-about">Клиентам</h1>
+            <p class="header__paragraph header__paragraph_page-about">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+            <p class="header__paragraph header__paragraph_page-about">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+            <p class="header__paragraph header__paragraph_page-about">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+            <p class="header__paragraph header__paragraph_page-about">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+            <p class="header__paragraph header__paragraph_page-about">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+        </div>
+    </header>
+    
+    <section class="technology">
+        <h2 class="technology__title">Используемые технологии</h2>
+        <div class="technology__container">
+            <img src="./images/page-about/html.svg" alt="HTML image" class="technology__item">
+            <img src="./images/page-about/css.svg" alt="CSS image" class="technology__item">
+            <img src="./images/page-about/js.svg" alt="JavaScript image" class="technology__item">
+            <img src="./images/page-about/webpack.svg" alt="Webpack image" class="technology__item">
+        </div>
+    </section>
+
+    <section class="about-author">
+        <img src="./images/author.png" alt="author" class="about-author__author-pic">
+        <div class="about-author__description">
+            <h2 class="about-author__titile">Об авторе</h2>
+            <p class="about-author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            <p class="about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+    </section>
+
+    <section class="slider"></section>
+
+    <footer class="footer">
+        <div class="footer__copy">&copy; Supersite</div>
+        <ul class="footer__links">
+            <li class="footer__page-link"><a href="./index.html" class="footer__link">Главная</a></li>
+            <li class="footer__page-link"><a href="./about.html" class="footer__link">О проекте</a></li>
+            <li class="footer__page-link"><a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a></li>
+        </ul>
+        <ul class="footer__links-social">
+            <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories" class="footer__link"><img src="./images/github.svg" alt="github icon" class="footer__img"></a></li>
+            <li class="footer__social-links"><a href="" class="footer__link"><img src="./images/fb.svg" alt="facebook icon" class="footer__img"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
