@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg">
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="pages/index.css">
+    <link rel="shortcut icon" href="<%=require('../../images/favicon.svg')%>" type="image/svg">
     <title>NewsAnalyser</title>
 </head>
 <body class="body">
@@ -36,10 +34,10 @@
     <section class="technology">
         <h2 class="technology__title">Используемые технологии</h2>
         <div class="technology__container">
-            <img src="./images/page-about/html.svg" alt="HTML image" class="technology__item">
-            <img src="./images/page-about/css.svg" alt="CSS image" class="technology__item">
-            <img src="./images/page-about/js.svg" alt="JavaScript image" class="technology__item">
-            <img src="./images/page-about/webpack.svg" alt="Webpack image" class="technology__item">
+            <img src="<%=require('../../images/html.svg')%>" alt="HTML image" class="technology__item">
+            <img src="<%=require('../../images/css.svg')%>" alt="CSS image" class="technology__item">
+            <img src="<%=require('../../images/js.svg')%>" alt="JavaScript image" class="technology__item">
+            <img src="<%=require('../../images/webpack.svg')%>" alt="Webpack image" class="technology__item">
         </div>
     </section>
 
@@ -52,7 +50,29 @@
         </div>
     </section>
 
-    <section class="slider"></section>
+    <section class="slider" style="display: none;">
+        <h2 class="slider__title">История коммитов из GitHub</h2>
+        <a href="" class="slider__github-link">Открыть в Github</a>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__copy">&copy; Supersite</div>
@@ -62,8 +82,8 @@
             <li class="footer__page-link"><a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a></li>
         </ul>
         <ul class="footer__links-social">
-            <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories" class="footer__link"><img src="./images/github.svg" alt="github icon" class="footer__img"></a></li>
-            <li class="footer__social-links"><a href="" class="footer__link"><img src="./images/fb.svg" alt="facebook icon" class="footer__img"></a></li>
+            <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories" class="footer__link"><img src="<%=require('../../images/github.svg')%>" alt="github icon" class="footer__img"></a></li>
+            <li class="footer__social-links"><a href="" class="footer__link"><img src="<%=require('../../images/fb.svg')%>" alt="facebook icon" class="footer__img"></a></li>
         </ul>
     </footer>
 </body>

@@ -1,0 +1,30 @@
+@import url(../../fonts/fonts.css);
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/header/_page-about/header_page-about.css);
+@import url(../../blocks/navigation/navigation.css);
+@import url(../../blocks/search/search.css);
+@import url(../../blocks/about-author/about-author.css);
+@import url(../../blocks/footer/footer.css);
+@import url(../../blocks/navigation/_page-about/navigation__links_page-about.css);
+@import url(../../blocks/technology/technology.css);
+@import url(../../blocks/slider/slider.css);
+@import url(../../blocks/analytics/analytics.css);
+@import url(../../blocks/diagram/diagram.css);
+@import url(../../blocks/result/result.css);
+@import url(../../blocks/result-header/result-header.css);
+@import url(../../blocks/card/card.css);
+@import url(../../blocks/preloader/preloader.css);
+@import url(../../blocks/loader/loader.css);
+@import url(../../blocks/output/output.css);
+@import url(../../blocks/nothing-found/nothing-found.css);
+
+.body{
+    margin: auto;
+    max-width: 1440px;
+}
+
+@media screen and (max-width: 768px){
+    .body{
+        width: 100%;
+    }
+}

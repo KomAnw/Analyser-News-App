@@ -6,6 +6,12 @@
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: calc( (100vw - 320px)/(1440 - 320)*(20 - 16) + 16px);
     line-height: 24px;
+}
+
+@media screen and (max-width: 768px){
+    .navigation__logo{
+        margin: 30px 0 26px 4.7%;
+    }
 }

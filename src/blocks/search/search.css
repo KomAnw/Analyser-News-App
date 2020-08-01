@@ -6,7 +6,13 @@
 
     position: relative;
 
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
+    margin: 64px auto 0px auto;
+}
+
+@media screen and (max-width: 480px) {
+    .search {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

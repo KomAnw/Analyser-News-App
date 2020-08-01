@@ -1,0 +1,10 @@
+@import url(./__github-link/__github-link.css);
+@import url(./__title/__titile.css);
+
+.slider{
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #F5F6F7;
+}

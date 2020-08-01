@@ -1,0 +1,7 @@
+.card__description{
+    display: flex;
+    flex-wrap: wrap;
+    width: 88%;
+    height: 284px;
+    margin: 20px 24px 24px 24px;
+}

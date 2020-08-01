@@ -1,4 +1,4 @@
 .header_page-about{
-    justify-content: end;
+    justify-content: flex-start;
     background: #FFFFFF;
 }

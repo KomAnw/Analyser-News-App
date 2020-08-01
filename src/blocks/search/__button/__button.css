@@ -14,4 +14,23 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+    transition: background 0.2s linear;
+    cursor: pointer;
+}
+
+.search__button:hover{
+    background: #347EFF;
+}
+
+.search__button:focus{
+    background: #2A65CC;
+}
+
+@media screen and (max-width: 480px) {
+    .search__button {
+        position: initial;
+        width: 100%;
+        margin-top: 16px;
+        height: 56px;
+    }
 }

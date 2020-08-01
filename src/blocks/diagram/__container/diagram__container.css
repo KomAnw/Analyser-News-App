@@ -1,0 +1,6 @@
+.diagram__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 100%));
+    margin: 1.7% 0;
+    gap: 56px;
+}

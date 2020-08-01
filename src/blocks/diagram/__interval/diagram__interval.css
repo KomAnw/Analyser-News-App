@@ -1,0 +1,5 @@
+.diagram__interval{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-left: 104px;
+}

@@ -3,11 +3,17 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: calc( (100vw - 320px)/(1440 - 320)*(18 - 16) + 16px);
     line-height: 24px;
     color: #B6BCBF;
 }
 
 .navigation__item:hover{
     color: #FFFFFF;
+}
+
+@media screen and (min-width: 1440px){
+    .navigation__item{
+        font-size: 18px
+    }
 }

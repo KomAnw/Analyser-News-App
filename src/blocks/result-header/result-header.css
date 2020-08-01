@@ -1,0 +1,7 @@
+@import url(./__link/result-header__link.css);
+@import url(./__title/result-header__title.css);
+
+.result-header{
+    width: 100%;
+    display: flex;
+}

@@ -1,0 +1,16 @@
+@import url(./__info/diagram__info.css);
+@import url(./__paragraph/diagram__paragraph.css);
+@import url(./__container/diagram__container.css);
+@import url(./__item/diagram__item.css);
+@import url(./__date/diagram__date.css);
+@import url(./__line/diagram__line.css);
+@import url(./__interval/diagram__interval.css);
+@import url(./__number/diagram__number.css);
+
+.diagram{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    margin: 0 104px 0 104px;
+    padding-bottom: 80px;
+}
