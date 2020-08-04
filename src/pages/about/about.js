@@ -1,2 +1,2 @@
 import '../../vendor/normalize.css';
-import './index.css';
+import '../index/index.css';

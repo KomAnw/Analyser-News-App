@@ -8,3 +8,12 @@
     text-align: center;
     color: #1A1B22;
 }
+
+@media screen and (max-width: 480px) {
+    .nothing-found__title {
+        font-size: 24px;
+        line-height: 26px;
+        width: auto;
+        margin: 15px 20px;
+    }
+}

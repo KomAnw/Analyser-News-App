@@ -4,4 +4,11 @@
 .result-header{
     width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 630px){
+    .result-header{
+        flex-wrap: wrap;
+    }
 }

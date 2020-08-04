@@ -1,4 +1,23 @@
 .technology__container{
+    display: flex;
     width: auto;
-    margin: 93px auto 88px 178px;
+    margin: 93px 0 88px 0;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .technology__container{
+        width: 85%;
+        padding: 0 40px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .technology__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        margin: 40px;
+    }
 }

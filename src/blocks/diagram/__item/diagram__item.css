@@ -3,3 +3,9 @@
     grid-template-columns: 0.5fr 10fr;
     gap: 0 4%;
 }
+
+@media screen and (max-width: 5208px) {
+    .diagram__item{
+        gap: 8%;
+    }
+}

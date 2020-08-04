@@ -21,3 +21,17 @@
 .result__add:hover{
     opacity: 0.7;
 }
+
+@media screen and (max-width: 7200px) {
+    .result__add {
+        width: 350px;
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .result__add {
+        width: 100%;
+        margin: 14px 20px;
+    }
+}

@@ -6,3 +6,10 @@
     color: #1A1B22;
     margin-left: 0;
 }
+
+@media screen and (max-width: 950px) {
+    .header__paragraph_page-about{
+        width: auto;
+        padding: 0;
+    }
+}

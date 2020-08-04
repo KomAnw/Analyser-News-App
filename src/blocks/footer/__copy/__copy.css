@@ -8,3 +8,22 @@
     align-self: center;
     margin: 0 0 0 104px;
 }
+
+@media screen and (max-width: 1200px) {
+    .footer__copy{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer__copy{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer__copy{
+        width: 100%;
+        order: 2;
+    }
+}

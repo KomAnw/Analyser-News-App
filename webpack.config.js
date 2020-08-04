@@ -5,13 +5,16 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const { resolve } = require('path');
-const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: './src/pages/index/index.js',
+  entry: {
+    index: './src/pages/index/index.js',
+    about: './src/pages/about/about.js',
+    analytics: './src/pages/analytics/analytics.js',
+  },
   output:{
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name][chunkhash].js'
+    filename: 'js/[name][chunkhash].js'
   },
 
   module: {
@@ -24,7 +27,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          ('style-loader', MiniCssExtractPlugin.loader),
           {
             loader: 'css-loader',
             options: {
@@ -39,7 +42,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options:{
-            name: './fonts/[name].[ext]'
+            name: './vendor/fonts/[name].[ext]'
           }
         }
       },
@@ -82,13 +85,20 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['index'],
+      filename: 'index.html',
       template: './src/pages/index/index.html',
     }),
     new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['about'],
       filename: 'about.html',
       template: './src/pages/about/about.html'
     }),
     new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['analytics'],
       filename: 'analytics.html',
       template: './src/pages/analytics/analytics.html'
     }),

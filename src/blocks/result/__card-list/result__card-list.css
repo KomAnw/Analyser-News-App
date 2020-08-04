@@ -1,7 +1,29 @@
 .result__card-list{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(288px, 400px));
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     justify-content: center;
+    padding: 0 104px;
+}
+
+@media screen and (max-width: 1200px) {
+    .result__card-list{
+        padding: 0 40px;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .result__card-list{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .result__card-list{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;   
+    }
 }

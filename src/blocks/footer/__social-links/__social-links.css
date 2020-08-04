@@ -3,3 +3,7 @@
     margin: 0 0 0 28px;
     padding: 0;
 }
+
+.footer__social-links:first-child {
+    margin-left: 0;
+}

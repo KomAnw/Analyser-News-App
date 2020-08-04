@@ -9,8 +9,14 @@
 
 .diagram{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
     margin: 0 104px 0 104px;
     padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .diagram{
+        margin: 0 4.7%;
+        padding-bottom: 40px;
+    }
 }

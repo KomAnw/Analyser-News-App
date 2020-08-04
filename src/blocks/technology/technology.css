@@ -3,8 +3,14 @@
 @import url(./__item/technology__item.css);
 
 .technology{
-    width: 1440px;
-    display: flex;
-    justify-content: space-between;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     background: #F5F6F7;
+}
+
+@media screen and (max-width: 1100px) {
+    .technology{
+        grid-template-columns: 1fr;
+    }
 }

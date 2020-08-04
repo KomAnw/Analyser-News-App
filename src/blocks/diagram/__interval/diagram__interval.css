@@ -1,5 +1,17 @@
 .diagram__interval{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin-left: 104px;
+    display: flex;
+    margin-left: calc((100vw - 678px)/(1440 - 678) * (104 - 76) + 76px);
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .diagram__interval{
+        margin-left: calc((100vw - 678px)/(1440 - 678) * (104 - 76) + 76px);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .diagram__interval{
+        display: none;
+    }
 }

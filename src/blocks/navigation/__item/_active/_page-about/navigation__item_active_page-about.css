@@ -4,3 +4,14 @@
     border-bottom: 3px solid #1A1B22;
 }
 
+@media screen and (max-width: 750px) {
+    .navigation__item_active_page-about{
+        padding-bottom: 32%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .navigation__item_active_page-about{
+        padding-bottom: 34%;
+    }
+}

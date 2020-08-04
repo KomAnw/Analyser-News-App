@@ -1,5 +1,5 @@
 .analytics__title {
-    width: 1232px;
+    width: auto;
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: normal;
@@ -9,4 +9,10 @@
 
     padding: 80px 0 48px 104px;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .analytics__title {
+        padding: 40px 4.7%;   
+    }
 }

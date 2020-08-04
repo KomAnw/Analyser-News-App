@@ -5,4 +5,11 @@
     font-size: 18px;
     color: #1A1B22;
     margin: 0;
+    width: 57px;
+}
+
+@media screen and (max-width: 768px) {
+    .diagram__date {
+          
+    }
 }

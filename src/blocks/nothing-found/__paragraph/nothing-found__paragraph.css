@@ -8,3 +8,11 @@
     text-align: center;
     color: #B6BCBF;
 }
+
+@media screen and (max-width: 480px) {
+    .nothing-found__paragraph {
+        width: auto;
+        margin: 0 20px;
+        line-height: 20px;
+    }
+}

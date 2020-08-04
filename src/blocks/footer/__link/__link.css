@@ -8,6 +8,9 @@
     color: #1A1B22;
 
     margin: 0;
-
     align-self: center;
+}
+
+.footer__link:hover{
+    color: #b6bcbf;
 }

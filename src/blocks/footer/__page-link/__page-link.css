@@ -2,3 +2,20 @@
     list-style: none;
     margin: 0 0 0 40px;
 }
+
+@media screen and (max-width: 900px) {
+    .footer__page-link {
+        margin-left: 25px;
+    }
+    
+    .footer__page-link:first-child {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer__page-link {
+        margin: 7% 0;
+        width: 100%;
+    }
+}

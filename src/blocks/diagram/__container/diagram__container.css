@@ -4,3 +4,10 @@
     margin: 1.7% 0;
     gap: 56px;
 }
+
+@media screen and (max-width: 520px) {
+    .diagram__container{
+        margin: 16px 0;
+        gap: 24px;
+    }
+}

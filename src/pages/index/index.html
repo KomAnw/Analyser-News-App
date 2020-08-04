@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<%=require('../../images/favicon.svg')%>" type="image/svg">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
     <title>NewsAnalyser</title>
 </head>
 
@@ -53,50 +54,33 @@
                 <a href="./analytics.html" class="result-header__link">Посмотреть аналитику&nbsp;></a>
             </div>
             <div class="result__card-list">
-                <div class="card">
-                    <div class="card__image"></div>
-                    <div class="card__description">
+                <a href="" class="card">
+                    <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
                         <p class="card__date">2 августа, 2019</p>
                         <h3 class="card__title">Национальное достояние – парки</h3>
                         <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                         <p class="card__publisher">Лента.ру</p>
-                    </div>
-                </div>
+                </a>
                 <div class="card">
-                    <div class="card__image"></div>
-                    <div class="card__description">
+                    <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
                         <p class="card__date">2 августа, 2019</p>
                         <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
                         <p class="card__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                         <p class="card__publisher">Медуза</p>
-                    </div>
                 </div>
                 <div class="card">
-                    <div class="card__image"></div>
-                    <div class="card__description">
+                    <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
                         <p class="card__date">2 августа, 2019</p>
                         <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
                         <p class="card__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                         <p class="card__publisher">Риа</p>
-                    </div>
                 </div>
                 <div class="card">
-                    <div class="card__image"></div>
-                    <div class="card__description">
+                    <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
                         <p class="card__date">2 августа, 2019</p>
                         <h3 class="card__title">Национальное достояние – парки</h3>
                         <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                         <p class="card__publisher">Лента.ру</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image"></div>
-                    <div class="card__description">
-                        <p class="card__date">2 августа, 2019</p>
-                        <h3 class="card__title">Национальное достояние – парки</h3>
-                        <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <p class="card__publisher">Лента.ру</p>
-                    </div>
                 </div>
             </div>
             <button class="result__add">Показать еще</button>
@@ -108,19 +92,18 @@
         </div>
     </section>
 
-    <!-- <section class="about-author">
+    <section class="about-author">
         <img src="<%=require('../../images/author.png')%>" alt="author" class="about-author__author-pic">
         <div class="about-author__description">
             <h2 class="about-author__titile">Об авторе</h2>
             <p class="about-author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас
                 зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут
-                научились, и чем можете помочь потенциальным заказчикам.</p>
+            <p class="about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
         </div>
     </section>
 
-    <!-- <footer class="footer">
-        <div class="footer__copy">&copy; Supersite</div>
+    <footer class="footer">
+        <div class="footer__copy">&copy; 2020 Supersite</div>
         <ul class="footer__links">
             <li class="footer__page-link"><a href="./index.html" class="footer__link">Главная</a></li>
             <li class="footer__page-link"><a href="./about.html" class="footer__link">О проекте</a></li>
@@ -134,6 +117,7 @@
             <li class="footer__social-links"><a href="" class="footer__link"><img src="<%=require('../../images/fb.svg')%>"
                         alt="facebook icon" class="footer__img"></a></li>
         </ul>
-    </footer> -->
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

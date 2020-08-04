@@ -5,3 +5,9 @@
     gap: 0 4%;
     border-bottom: 1px solid #1A1B22;
 }
+
+@media screen and (max-width: 5208px) {
+    .diagram__info{
+        gap: 8%;
+    }
+}

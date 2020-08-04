@@ -1,3 +1,9 @@
 .about-author__description{
-    margin: 131px 216px 279px 0;
+    margin: 7% 0 0 0;
+}
+
+@media screen and (max-width: 500px) {
+    .about-author__description {
+        margin: 5% 0;
+    }
 }

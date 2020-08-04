@@ -1,6 +1,7 @@
 @import url(./__paragraph/header__paragraph.css);
 @import url(./__paragraph/_page-about/header__paragraph_page-about.css);
 @import url(./__titile/header__title.css);
+@import url(./__titile/_page_analytics/header__title_page-analytics.css);
 @import url(./__titile/_page-about/header__title_page-about.css);
 @import url(./__texts/header__texts.css);
 @import url(./__texts/_page-about/header__texts_page-about.css);

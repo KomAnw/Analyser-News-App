@@ -1,10 +1,30 @@
 .result-header__title{
-    width: 712px;
+    width: auto;
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: calc( (100vw - 768px)/(1440 - 768)*(40 - 30) + 30px);
     line-height: 46px;
 
     margin: 80px 0 64px 104px;
+}
+
+@media screen and (max-width: 1000px){
+    .result-header__title{
+        margin: 40px 0 32px 40px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .result-header__title{
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .result-header__title{
+        width: 100%;
+        margin: 32px 16px 0 16px;
+    }
 }

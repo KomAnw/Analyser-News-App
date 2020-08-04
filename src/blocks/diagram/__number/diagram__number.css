@@ -1,5 +1,5 @@
 .diagram__number{
-    margin: 2% 0;
+    margin: 16px 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -8,13 +8,4 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #B6BCBF;
-    text-align: center;
-}
-
-.diagram__number:first-child{
-    text-align: start;
-}
-
-.diagram__number:last-child{
-    text-align: end;
 }

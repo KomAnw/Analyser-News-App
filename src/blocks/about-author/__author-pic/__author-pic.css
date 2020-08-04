@@ -1,3 +1,6 @@
 .about-author__author-pic{
-    margin: 80px 56px 80px 104px;
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: center;
 }
