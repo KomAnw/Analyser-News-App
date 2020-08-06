@@ -1,0 +1,7 @@
+.gh-page__author{
+    margin: 24px 0 0 0;
+    width: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    gap: 16px;
+}

@@ -4,7 +4,7 @@
   "description": "Сервис для анализа происходящих в мире событий.",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && webpack --mode production",
+    "build": "rimraf dist && webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --watch",
     "deploy": "gh-pages -d dist"
   },
@@ -40,8 +40,8 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.6.5",
-    "swiper": "^6.0.4"
+    "core-js": "^3.6.5"
   }
 }

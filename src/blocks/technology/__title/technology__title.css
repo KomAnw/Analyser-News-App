@@ -11,6 +11,12 @@
     justify-self: center;
 }
 
+@media screen and (min-width: 1440px) {
+    .technology__title{
+        margin-left: calc((100vw - 1440px)/(2560 - 1440) * (661 - 104) + 104px);
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .technology__title{
         justify-self: start;

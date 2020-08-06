@@ -1,6 +1,6 @@
 @import url(./__title/analytics__title.css);
 
 .analytics{
-    max-width: 1440px;
+    max-width: 100%;
     background: #F5F6F7;
 }

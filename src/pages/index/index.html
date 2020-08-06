@@ -24,11 +24,13 @@
                 </ul>
             </nav>
         </div>
+        <hr class="header__line">
         <div class="header__texts">
             <h1 class="header__title">Что в мире творится?</h1>
-            <p class="header__paragraph">Ввидите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+            <p class="header__paragraph">Ввидите в поиске любую тему и узнайте, насколько популярной она была в новостях
+                за прошедшую неделю.</p>
             <form action="" class="search">
-                <input type="text" class="search__field">
+                <input type="text" class="search__field" placeholder="Введите тему новости">
                 <button class="search__button">Искать</button>
             </form>
         </div>
@@ -56,32 +58,38 @@
             <div class="result__card-list">
                 <a href="" class="card">
                     <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
-                        <p class="card__date">2 августа, 2019</p>
-                        <h3 class="card__title">Национальное достояние – парки</h3>
-                        <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <p class="card__publisher">Лента.ру</p>
+                    <p class="card__date">2 августа, 2019</p>
+                    <h3 class="card__title">Национальное достояние – парки</h3>
+                    <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                        складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                        приобщиться к природе.</p>
+                    <p class="card__publisher">Лента.ру</p>
                 </a>
-                <div class="card">
+                <a class="card">
                     <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
-                        <p class="card__date">2 августа, 2019</p>
-                        <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-                        <p class="card__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-                        <p class="card__publisher">Медуза</p>
-                </div>
-                <div class="card">
+                    <p class="card__date">2 августа, 2019</p>
+                    <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
+                    <p class="card__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                        чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+                    <p class="card__publisher">Медуза</p>
+                </a>
+                <a class="card">
                     <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
-                        <p class="card__date">2 августа, 2019</p>
-                        <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                        <p class="card__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                        <p class="card__publisher">Риа</p>
-                </div>
-                <div class="card">
+                    <p class="card__date">2 августа, 2019</p>
+                    <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                    <p class="card__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                        необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                    <p class="card__publisher">Риа</p>
+                </a>
+                <a class="card">
                     <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
-                        <p class="card__date">2 августа, 2019</p>
-                        <h3 class="card__title">Национальное достояние – парки</h3>
-                        <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                        <p class="card__publisher">Лента.ру</p>
-                </div>
+                    <p class="card__date">2 августа, 2019</p>
+                    <h3 class="card__title">Национальное достояние – парки</h3>
+                    <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                        складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                        приобщиться к природе.</p>
+                    <p class="card__publisher">Лента.ру</p>
+                </a>
             </div>
             <button class="result__add">Показать еще</button>
         </div>
@@ -98,7 +106,8 @@
             <h2 class="about-author__titile">Об авторе</h2>
             <p class="about-author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас
                 зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+            <p class="about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+                научились, и чем можете помочь потенциальным заказчикам.</p>
         </div>
     </section>
 
@@ -114,10 +123,11 @@
             <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories"
                     class="footer__link"><img src="<%=require('../../images/github.svg')%>" alt="github icon"
                         class="footer__img"></a></li>
-            <li class="footer__social-links"><a href="" class="footer__link"><img src="<%=require('../../images/fb.svg')%>"
-                        alt="facebook icon" class="footer__img"></a></li>
+            <li class="footer__social-links"><a href="https://ru-ru.facebook.com/" class="footer__link"><img
+                        src="<%=require('../../images/fb.svg')%>" alt="facebook icon" class="footer__img"></a></li>
         </ul>
     </footer>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
+
 </html>

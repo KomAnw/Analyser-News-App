@@ -6,6 +6,8 @@
 @import url(./__links-social/__links-social.css);
 
 .footer{
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }

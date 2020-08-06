@@ -4,6 +4,12 @@
     margin-bottom: 94px;
 }
 
+@media screen and (min-width: 1440px) {
+    .header__texts_page-about{
+        margin-left: calc((100vw - 1440px)/(2560 - 1440) * (661 - 104) + 104px);
+    }
+}
+
 @media screen and (max-width: 950px) {
     .header__texts_page-about{
         width: auto;

@@ -9,6 +9,12 @@
     margin: 80px 0 64px 104px;
 }
 
+@media screen and (min-width: 1440px){
+    .result-header__title{
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 1000px){
     .result-header__title{
         margin: 40px 0 32px 40px;

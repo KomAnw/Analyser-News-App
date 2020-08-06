@@ -1,0 +1,5 @@
+.slider__header{
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+}

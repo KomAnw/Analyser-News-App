@@ -5,7 +5,6 @@
 @import url(../../blocks/search/search.css);
 @import url(../../blocks/about-author/about-author.css);
 @import url(../../blocks/footer/footer.css);
-@import url(../../blocks/navigation/_page-about/navigation__links_page-about.css);
 @import url(../../blocks/technology/technology.css);
 @import url(../../blocks/slider/slider.css);
 @import url(../../blocks/analytics/analytics.css);
@@ -17,14 +16,19 @@
 @import url(../../blocks/loader/loader.css);
 @import url(../../blocks/output/output.css);
 @import url(../../blocks/nothing-found/nothing-found.css);
+@import url(../../blocks/header/__line/header__line.css);
+@import url(../../blocks/header/__line/_page-about/header__line_page-about.css);
+@import url(../../blocks/gh-card/gh-card.css);
 
 .body{
-    margin: auto;
-    max-width: 1440px;
+    width: 100%;
 }
 
-@media screen and (max-width: 768px){
-    .body{
-        width: 100%;
-    }
+.glide__track{
+    width: 100%;
+    overflow: hidden;
+}
+
+.glide__slides{
+    width: 100%;
 }

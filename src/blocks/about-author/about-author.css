@@ -8,6 +8,8 @@
     grid-template-columns: 1.4fr 2fr;
     gap: 7%;
     margin: 80px 7%;
+    margin-right: calc((100vw - 1440px)/(2560 - 1440) * (560 - 104) + 104px);
+    margin-left: calc((100vw - 1440px)/(2560 - 1440) * (560 - 104) + 104px);
 }
 
 @media screen and (max-width: 1200px) {

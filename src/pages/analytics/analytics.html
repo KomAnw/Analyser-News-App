@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
     <title>NewsAnalyser</title>
 </head>
+
 <body class="body">
     <header class="header header_page-about">
         <div class="navigation navigation__links_page-about">
@@ -22,15 +24,19 @@
                 </ul>
             </nav>
         </div>
+        <hr class="header__line header__line_page-about">
         <div class="header__texts header__texts_page-analytics">
             <ul class="header__links">
-                <li class="header__link"><a href="../index/index.html" class="header__item header__item_state_active">Главная</a></li>
+                <li class="header__link"><a href="../index/index.html"
+                        class="header__item header__item_state_active">Главная</a></li>
                 <li class="header__link">&nbsp;/&nbsp;</li>
                 <li class="header__link"><a href="./analytics.html" class="header__item">Аналитика</a></li>
             </ul>
             <h1 class="header__title header__title_page-analytics">Вы спросили: «Путешествия»</h1>
-            <p class="header__paragraph header__paragraph_page-analytics">Новостей за неделю:&nbsp;<span class="header__number">34 324</span></p>
-            <p class="header__paragraph header__paragraph_page-analytics">Упоминаний в загаловках:&nbsp;<span class="header__number">235</span></p>
+            <p class="header__paragraph header__paragraph_page-analytics">Новостей за неделю:&nbsp;<span
+                    class="header__number">34 324</span></p>
+            <p class="header__paragraph header__paragraph_page-analytics">Упоминаний в загаловках:&nbsp;<span
+                    class="header__number">235</span></p>
         </div>
     </header>
 
@@ -100,10 +106,11 @@
             <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories"
                     class="footer__link"><img src="<%=require('../../images/github.svg')%>" alt="github icon"
                         class="footer__img"></a></li>
-            <li class="footer__social-links"><a href="" class="footer__link"><img src="<%=require('../../images/fb.svg')%>"
-                        alt="facebook icon" class="footer__img"></a></li>
+            <li class="footer__social-links"><a href="https://ru-ru.facebook.com/" class="footer__link"><img
+                        src="<%=require('../../images/fb.svg')%>" alt="facebook icon" class="footer__img"></a></li>
         </ul>
     </footer>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
+
 </html>

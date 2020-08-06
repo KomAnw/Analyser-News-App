@@ -17,3 +17,9 @@
         line-height: 40px;
     }
 }
+
+@media screen and (min-width: 1440px){
+    .header__title{
+        font-size: 60px;
+    }
+}

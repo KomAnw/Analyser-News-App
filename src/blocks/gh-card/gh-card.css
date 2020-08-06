@@ -1,0 +1,15 @@
+@import url(./__author/gh-page__author.css);
+@import url(./__date/gh-card__date.css);
+@import url(./__email/gh-page__email.css);
+@import url(./__img/gh-card__img.css);
+@import url(./__info/gh-page__info.css);
+@import url(./__text/gh-page__text.css);
+@import url(./__title/gh-page__title.css);
+
+.gh-card{
+    display: block;
+    max-width: 400px;
+    background: #FFFFFF;
+    min-height: 288px;
+    border-radius: 16px;
+}
