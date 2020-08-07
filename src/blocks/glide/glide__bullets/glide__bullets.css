@@ -1,5 +1,4 @@
-.slider__header{
-    max-width: 1440px;
+.glide__bullets{
     display: flex;
     justify-content: center;
 }

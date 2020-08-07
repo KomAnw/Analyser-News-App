@@ -1,10 +1,10 @@
-.gh-page__title{
+.gh-card__email{
     margin: 0;
     width: 100%;
-    font-family: Roboto Slab;
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 22px;
     color: #1A1B22;
 }

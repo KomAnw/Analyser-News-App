@@ -29,8 +29,8 @@
             <h1 class="header__title">Что в мире творится?</h1>
             <p class="header__paragraph">Ввидите в поиске любую тему и узнайте, насколько популярной она была в новостях
                 за прошедшую неделю.</p>
-            <form action="" class="search">
-                <input type="text" class="search__field" placeholder="Введите тему новости">
+            <form action="#" class="search">
+                <input type="text" class="search__field" placeholder="Введите тему новости" minlength="2" maxlength="30" required>
                 <button class="search__button">Искать</button>
             </form>
         </div>
@@ -56,8 +56,8 @@
                 <a href="./analytics.html" class="result-header__link">Посмотреть аналитику&nbsp;></a>
             </div>
             <div class="result__card-list">
-                <a href="" class="card">
-                    <img src="<%=require('../../images/card.png')%>" alt="" class="card__image">
+                <a href="" class="card" target="_blank">
+                    <img src="<%=require('../../images/card.png')%>" alt="Картинка новости" class="card__image">
                     <p class="card__date">2 августа, 2019</p>
                     <h3 class="card__title">Национальное достояние – парки</h3>
                     <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
@@ -94,7 +94,7 @@
             <button class="result__add">Показать еще</button>
         </div>
         <div class="nothing-found" style="display: none;">
-            <img src="<%=require('../../images/not-found.png')%>" alt="">
+            <img src="<%=require('../../images/not-found.png')%>" alt="Смайлик ничего не найдено">
             <h2 class="nothing-found__title">Ничего не найдено</h2>
             <p class="nothing-found__paragraph">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
@@ -117,13 +117,13 @@
             <li class="footer__page-link"><a href="./index.html" class="footer__link">Главная</a></li>
             <li class="footer__page-link"><a href="./about.html" class="footer__link">О проекте</a></li>
             <li class="footer__page-link"><a href="https://praktikum.yandex.ru/"
-                    class="footer__link">Яндекс.Практикум</a></li>
+                    class="footer__link" target="_blank">Яндекс.Практикум</a></li>
         </ul>
         <ul class="footer__links-social">
             <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories"
-                    class="footer__link"><img src="<%=require('../../images/github.svg')%>" alt="github icon"
+                    class="footer__link" target="_blank"><img src="<%=require('../../images/github.svg')%>" alt="github icon"
                         class="footer__img"></a></li>
-            <li class="footer__social-links"><a href="https://ru-ru.facebook.com/" class="footer__link"><img
+            <li class="footer__social-links"><a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank"><img
                         src="<%=require('../../images/fb.svg')%>" alt="facebook icon" class="footer__img"></a></li>
         </ul>
     </footer>

@@ -6,6 +6,33 @@
     font-size: 40px;
     line-height: 46px;
     color: #1A1B22;
+    margin: 72px 0 64px 104px;
+}
 
-    margin: 72px 342px 64px 104px;
+@media screen and (max-width: 1200px) {
+    .slider__title{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .slider__title{
+        margin-top: 40px;
+        margin-bottom: 32px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider__title{
+        font-size: 30px;
+        margin-left: 3%;
+        font-size: calc( (100vw - 320px)/(768 - 320)*(40 - 30) + 30px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .slider__title{
+        font-size: 30px;
+    }
 }

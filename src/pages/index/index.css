@@ -22,13 +22,5 @@
 
 .body{
     width: 100%;
-}
-
-.glide__track{
-    width: 100%;
-    overflow: hidden;
-}
-
-.glide__slides{
-    width: 100%;
+    font-family: Arial, sans-serif;
 }

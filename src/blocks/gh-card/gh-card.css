@@ -1,10 +1,10 @@
-@import url(./__author/gh-page__author.css);
+@import url(./__author/gh-card__author.css);
 @import url(./__date/gh-card__date.css);
-@import url(./__email/gh-page__email.css);
+@import url(./__email/gh-card__email.css);
 @import url(./__img/gh-card__img.css);
-@import url(./__info/gh-page__info.css);
-@import url(./__text/gh-page__text.css);
-@import url(./__title/gh-page__title.css);
+@import url(./__info/gh-card__info.css);
+@import url(./__text/gh-card__text.css);
+@import url(./__title/gh-card__title.css);
 
 .gh-card{
     display: block;
@@ -12,4 +12,23 @@
     background: #FFFFFF;
     min-height: 288px;
     border-radius: 16px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .gh-card{
+        width: 336px;  
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gh-card{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .gh-card{
+        width: 288px;
+    }
 }

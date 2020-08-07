@@ -8,6 +8,11 @@
     color: #1A1B22;
 
     margin: 94px 130px 72px 0;
+    transition: color .15s linear;
+}
+
+.result-header__link:hover{
+    color: #b6bcbf;
 }
 
 @media screen and (max-width: 1000px){

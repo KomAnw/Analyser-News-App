@@ -1,4 +1,13 @@
 .slider__container{
     max-width: 1440px;
+    width: calc( (100vw - 300px)/(1440 - 300) * (1440 - 300) + 300px);
     margin: 0 auto;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 630px) {
+    .slider__container{
+        margin-bottom: 20px;
+    }
 }

@@ -1,0 +1,21 @@
+.glide__bullet{
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin-top: 48px;
+    margin-left: 8px;
+    border-radius: 100%;
+    border-color: transparent;
+    background: #D1D2D6;
+    outline: none;
+}
+
+@media screen and (max-width: 630px) {
+    .glide__bullet{
+        margin-top: 20px;
+    }
+}
+
+.glide__bullet--active {
+    background: #1A1B22;
+}

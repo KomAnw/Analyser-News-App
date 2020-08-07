@@ -9,6 +9,7 @@
 
     margin: 0;
     align-self: center;
+    transition: color .15s linear;
 }
 
 .footer__link:hover{
