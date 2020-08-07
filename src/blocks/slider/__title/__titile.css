@@ -9,6 +9,12 @@
     margin: 72px 0 64px 104px;
 }
 
+@media screen and (min-width: 1440px){
+    .slider__title{
+        margin-left: calc((100vw - 1440px)/(2560 - 1440)*(560 - 104) + 104px);
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .slider__title{
         margin-left: 5%;

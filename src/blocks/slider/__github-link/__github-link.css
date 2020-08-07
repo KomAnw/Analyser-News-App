@@ -15,6 +15,12 @@
     color: #B6BCBF;
 }
 
+@media screen and (min-width: 1440px){
+    .slider__github-link{
+        margin-right: calc((100vw - 1440px)/(2560 - 1440)*(560 - 104) + 104px);
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .slider__github-link{
         margin-right: 5%;
