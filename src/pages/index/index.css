@@ -19,8 +19,9 @@
 @import url(../../blocks/header/__line/header__line.css);
 @import url(../../blocks/header/__line/_page-about/header__line_page-about.css);
 @import url(../../blocks/gh-card/gh-card.css);
+@import url(../../blocks/error/error.css);
 
-.body{
+.body {
     width: 100%;
     font-family: Arial, sans-serif;
 }

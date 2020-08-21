@@ -13,6 +13,7 @@
     min-height: 288px;
     border-radius: 16px;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

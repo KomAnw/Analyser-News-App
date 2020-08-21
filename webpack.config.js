@@ -12,7 +12,7 @@ module.exports = {
     about: './src/pages/about/about.js',
     analytics: './src/pages/analytics/analytics.js',
   },
-  output:{
+  output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name][chunkhash].js'
   },
@@ -27,7 +27,13 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          ('style-loader', MiniCssExtractPlugin.loader),
+          ('style-loader'),
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            },
+          },
           {
             loader: 'css-loader',
             options: {
@@ -41,7 +47,7 @@ module.exports = {
         test: /\.woff(2)?$/,
         use: {
           loader: 'file-loader',
-          options:{
+          options: {
             name: './vendor/fonts/[name].[ext]'
           }
         }
@@ -103,7 +109,8 @@ module.exports = {
       template: './src/pages/analytics/analytics.html'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css'
+      filename: './styles/[name].[contenthash].css',
+      chunkFilename: '[id].css',
     }),
     new WebpackMd5Hash(),
     new OptimizeCssAssetsPlugin({

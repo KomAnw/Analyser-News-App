@@ -1,11 +1,11 @@
 @import url(./__button/__button.css);
 @import url(./__field/__field.css);
+@import url(./__button/_disabled/search__button_disabled.css);
 
 .search{
+    display: flex;
     width: 608px;
-
     position: relative;
-
     margin: 64px auto 0px auto;
 }
 
