@@ -1,0 +1,14 @@
+@import url(./__github-link/__github-link.css);
+@import url(./__title/__titile.css);
+@import url(./__container/slider__container.css);
+@import url(../glide/glide__arrow/glide__arrow.css);
+@import url(../glide/glide__bullet/glide__bullet.css);
+@import url(../glide/glide__bullets/glide__bullets.css);
+
+.slider{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #F5F6F7;
+}

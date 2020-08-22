@@ -1,0 +1,18 @@
+.nothing-found__paragraph {
+    width: 356px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #B6BCBF;
+}
+
+@media screen and (max-width: 480px) {
+    .nothing-found__paragraph {
+        width: auto;
+        margin: 0 20px;
+        line-height: 20px;
+    }
+}

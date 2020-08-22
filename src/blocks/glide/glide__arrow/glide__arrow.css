@@ -1,0 +1,27 @@
+.glide__arrow{
+    position: absolute;
+    top: calc(50% - 40px);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #1A1B22;
+    box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    outline: none;
+}
+
+.glide__arrow--left{
+    left: 1%;
+    color: #FFFFFF;
+}
+
+.glide__arrow--right{
+    right: 1%;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 520px) {
+    .glide__arrow{
+        display: none;
+    }
+}

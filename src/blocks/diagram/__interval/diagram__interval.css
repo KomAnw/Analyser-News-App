@@ -1,0 +1,23 @@
+.diagram__interval{
+    display: flex;
+    margin-left: 104px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1439px) {
+    .diagram__interval{
+        margin-left: calc((100vw - 678px)/(1440 - 678) * (104 - 76) + 76px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .diagram__interval{
+        margin-left: calc((100vw - 678px)/(1440 - 678) * (104 - 76) + 79px);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .diagram__interval{
+        display: none;
+    }
+}

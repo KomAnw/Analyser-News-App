@@ -1,0 +1,27 @@
+.footer__links-social{
+    align-self: center;
+    display: flex;
+    margin: 0 106px 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer__links-social {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer__links-social {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer__links-social {
+        width: 45%;
+        align-self: flex-start;
+        justify-content: flex-end;
+        margin-top: 30px;
+    }
+}

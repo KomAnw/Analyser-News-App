@@ -1,0 +1,36 @@
+.result-header__link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1A1B22;
+
+    margin: 94px 130px 72px 0;
+    transition: color .15s linear;
+}
+
+.result-header__link:hover{
+    color: #b6bcbf;
+}
+
+@media screen and (max-width: 1000px){
+    .result-header__link{
+        margin: 48px 47px 34px 0;
+    }
+}
+
+@media screen and (max-width: 678px){
+    .result-header__link{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .result-header__link{
+        width: 100%;
+        margin: 16px 16px 36px 16px;
+    }
+}

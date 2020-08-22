@@ -1,0 +1,60 @@
+.slider__github-link{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    align-self: center;
+    margin: 85px 130px 73px 0;
+    transition: color .15s linear;
+}
+
+.slider__github-link:hover{
+    color: #B6BCBF;
+}
+
+@media screen and (min-width: 1440px){
+    .slider__github-link{
+        margin-right: calc((100vw - 1440px)/(2560 - 1440)*(560 - 104) + 104px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .slider__github-link{
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .slider__github-link{
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .slider__github-link{
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .slider__github-link {
+        order: 1;
+        margin: 24px auto;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        padding: 16px 0;
+        text-align: center;
+        width: 288px;
+    }
+
+    .slider__github-link:hover{
+        background: #fff;
+        color: #1A1B22;
+        border-color: #fff;
+    }
+}

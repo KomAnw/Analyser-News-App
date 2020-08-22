@@ -1,0 +1,36 @@
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% - 4%) - 168px);
+    height: 43px;
+    border-radius: 0 0 50px 50px;
+    background: white;
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    margin-left: 4%;
+    text-align: center;
+    z-index: 1;
+    transition: bottom 0.2s linear;
+}
+
+.error_active {
+    bottom: -65%;
+}
+
+@media screen and (max-width: 480px) {
+    .error {
+        width: calc(96% - 76px);
+        border-radius: 50px 50px 0 0;
+        left: 13px;
+        bottom: 72px;
+        padding: 0 18px;
+        height: 56px;
+    }
+    .error_active {
+        bottom: 100%;
+
+    }
+}

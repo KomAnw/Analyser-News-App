@@ -1,0 +1,38 @@
+@import url(./__author-pic/__author-pic.css);
+@import url(./__description/__description.css);
+@import url(./__paragraph/__paragraph.css);
+@import url(./__titile/__titile.css);
+
+.about-author{
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    gap: 7%;
+    margin: 80px 7%;
+    margin-right: calc((100vw - 1440px)/(2560 - 1440) * (560 - 104) + 104px);
+    margin-left: calc((100vw - 1440px)/(2560 - 1440) * (560 - 104) + 104px);
+}
+
+@media screen and (max-width: 1200px) {
+    .about-author {
+        gap: 4%;
+        margin: 80px 5%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about-author {
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about-author {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-author {
+        grid-template-columns: 1fr
+    }
+}

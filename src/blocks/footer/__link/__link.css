@@ -1,0 +1,17 @@
+.footer__link{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+
+    margin: 0;
+    align-self: center;
+    transition: color .15s linear;
+}
+
+.footer__link:hover{
+    color: #b6bcbf;
+}

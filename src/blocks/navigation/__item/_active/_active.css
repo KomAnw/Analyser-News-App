@@ -1,0 +1,17 @@
+.navigation__item_active{
+    color: #FFFFFF;
+    padding-bottom: 37%;
+    border-bottom: 3px solid white;
+}
+
+@media screen and (max-width: 678px) {
+    .navigation__item_active {
+        padding-bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navigation__item_active {
+        padding-bottom: 41%;
+    }
+}

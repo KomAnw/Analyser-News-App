@@ -1,0 +1,15 @@
+.header__texts_page-analytics{
+    margin: 40px 0 80px 104px;
+}
+
+@media screen and (min-width: 1440px) {
+    .header__texts_page-analytics{
+        margin-left: calc((100vw - 1440px)/(2560 - 1440) * (661 - 104) + 104px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__texts_page-analytics{
+        margin: 40px 4.7%;
+    }
+}

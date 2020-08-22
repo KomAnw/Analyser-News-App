@@ -1,0 +1,8 @@
+@import url(./__in/loader__in.css);
+
+.loader{
+    width: 74px;
+    height: 74px;
+    position: relative;
+    overflow: hidden;
+}

@@ -1,0 +1,21 @@
+.header__title_page-about{
+    color: #1A1B22;
+    font-size: 40px;
+    line-height: 46px;
+    margin-left: 0;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 950px) {
+    .header__title_page-about{
+        width: auto;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .header__title_page-about{
+        font-size: 30px;
+        line-height: 34px;
+    }
+}

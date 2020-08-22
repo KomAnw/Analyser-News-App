@@ -1,0 +1,23 @@
+.navigation__logo{
+    margin: 30px 0 26px 104px;
+    text-decoration: none;
+    color: white;
+
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc( (100vw - 320px)/(1440 - 320)*(20 - 16) + 16px);
+    line-height: 24px;
+}
+
+@media screen and (max-width: 768px){
+    .navigation__logo{
+        margin: 30px 0 26px 4.7%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .navigation__logo{
+        font-size: 20px;
+    }
+}

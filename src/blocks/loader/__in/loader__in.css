@@ -1,0 +1,78 @@
+.loader__in {
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    background-color: #1a1b22;
+    border-radius: 50%;
+    bottom: 3%;
+    left: 47.2%;
+    animation: 1.2s linear infinite;
+    transform-origin: 50% -1.8em;
+    animation-name: rotating;
+}
+
+.loader__in:nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+.loader__in:nth-child(2) {
+    background-color: #292a31;
+}
+
+.loader__in:nth-child(3) {
+    animation-delay: 0.16s;
+}
+
+.loader__in:nth-child(3) {
+    background-color: #3b3c42;
+}
+
+.loader__in:nth-child(4) {
+    animation-delay: 0.24s;
+}
+
+.loader__in:nth-child(4) {
+    background-color: #4c4d53;
+}
+
+.loader__in:nth-child(5) {
+    animation-delay: 0.32s;
+}
+
+.loader__in:nth-child(5) {
+    background-color: #606166;
+}
+
+.loader__in:nth-child(6) {
+    animation-delay: 0.4s;
+}
+
+.loader__in:nth-child(6) {
+    background-color: #747579;
+}
+
+.loader__in:nth-child(7) {
+    animation-delay: 0.48s;
+}
+
+.loader__in:nth-child(7) {
+    background-color: #8c8d91;
+}
+
+.loader__in:nth-child(8) {
+    animation-delay: 0.56s;
+}
+
+.loader__in:nth-child(8) {
+    background-color: #a8a9ad;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,27 @@
+.technology__item{
+    display: block;
+    padding-right: 7%;
+}
+
+.technology__item:last-child{
+    padding-right: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .technology__item{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .technology__item{
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .technology__item{
+        width: 100%;
+    }
+}

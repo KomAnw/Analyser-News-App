@@ -1,0 +1,11 @@
+.navigation__links{
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 7% 26px 0;
+}
+
+@media screen and (max-width: 768px){
+    .navigation__links{
+        margin: 30px 5.5% 26px 0;
+    }
+}

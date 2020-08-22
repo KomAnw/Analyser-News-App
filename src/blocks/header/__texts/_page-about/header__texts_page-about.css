@@ -1,0 +1,25 @@
+.header__texts_page-about{
+    width: 815px;
+    margin-left: 104px;
+    margin-bottom: 94px;
+}
+
+@media screen and (min-width: 1440px) {
+    .header__texts_page-about{
+        margin-left: calc((100vw - 1440px)/(2560 - 1440) * (661 - 104) + 104px);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header__texts_page-about{
+        width: auto;
+        margin: 5% 104px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__texts_page-about{
+        width: auto;
+        margin: 5% 4.7%;
+    }
+}

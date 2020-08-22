@@ -1,0 +1,9 @@
+@import url(./__card-list/result__card-list.css);
+@import url(./__add/result__add.css);
+
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1440px;
+}

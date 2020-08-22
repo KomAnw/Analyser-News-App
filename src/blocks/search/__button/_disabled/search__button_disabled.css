@@ -1,0 +1,12 @@
+.search__button_disabled{
+    cursor: default;
+    background: #b6bcbf;
+}
+
+.search__button_disabled:hover{
+    background: #b6bcbf;
+}
+
+.search__button_disabled:focus{
+    background: #b6bcbf;
+}

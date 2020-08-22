@@ -1,0 +1,11 @@
+.diagram__item{
+    display: grid;
+    grid-template-columns: 0.5fr 10fr;
+    gap: 0 4%;
+}
+
+@media screen and (max-width: 520px) {
+    .diagram__item{
+        gap: 8%;
+    }
+}

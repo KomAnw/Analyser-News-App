@@ -1,0 +1,14 @@
+@import url(./__link/result-header__link.css);
+@import url(./__title/result-header__title.css);
+
+.result-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 630px){
+    .result-header{
+        flex-wrap: wrap;
+    }
+}
