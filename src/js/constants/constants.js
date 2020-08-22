@@ -12,6 +12,12 @@ const newsAtWeek = document.querySelector('.week');
 const headers = document.querySelector('.in-headers');
 const analyticsContainer = document.querySelector('.analytics');
 
+const owner = 'KomAnw';
+const repo = 'Analyser-News-App'
+const container = document.querySelector('.glide__slides');
+const points = document.querySelector('.glide__bullets')
+
 
 export {form, PAGE_SIZE, API_KEY, result, preloader, nothingFound, searchButton}
 export {title, newsAtWeek, headers, analyticsContainer}
+export {owner, repo, container, points}

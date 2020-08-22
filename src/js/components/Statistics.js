@@ -5,7 +5,6 @@ export class Statistics {
         this.headers = headers;
         this.analyticsContainer = analyticsContainer;
         this.statistics = JSON.parse(localStorage.getItem('analytics'));
-        console.log(this.statistics)
     }
 
     setGeneralInfo = () => {
@@ -17,21 +16,25 @@ export class Statistics {
 
     createNode = () => {
         this.arr = []
+        const days = []
         let q = 7;
         for (let i = 0; i < 7; i++) {
             this.node = this.template();
-            this.node.querySelector('.diagram__date').textContent = this.statistics.arrayDaysAndLines[i]
-            this.node.querySelector('.diagram__line').textContent = this.statistics.arrayDaysAndLines[q]
+            this.node.querySelector('.diagram__date').textContent = this.statistics.arrayDaysAndLines[i];
+            if(this.statistics.arrayDaysAndLines[q] == undefined){
+                this.node.querySelector('.diagram__line').textContent = 0;
+                this.node.querySelector('.diagram__line').style.color = 'black';
+                this.node.querySelector('.diagram__line').style.background = '#f5f6f7';
+            }
+            else{
+                this.node.querySelector('.diagram__line').textContent = this.statistics.arrayDaysAndLines[q];
+                this.node.querySelector('.diagram__line').setAttribute('style', `width:${this.statistics.arrayDaysAndLines[q]}%`);
+            }
             q += 1;
             this.arr.push(this.node);
         }
         this.render(this.arr)
     }
-
-    lineWith = (item) => {
-        item.querySelector('.diagram__line').setAttribute('width', '50%');
-    }
-
 
     template = () => {
         const markup = `
@@ -46,9 +49,7 @@ export class Statistics {
 
     render = (node) => {
         node.forEach(item => {
-            console.log(item)
             this.analyticsContainer.querySelector('.diagram__container').appendChild(item);
-            this.lineWith(item)
         });
     }
 

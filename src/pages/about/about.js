@@ -1,75 +1,39 @@
 import '../../vendor/normalize.css';
 import '../index/index.css';
 import '../../../node_modules/@glidejs/glide/dist/css/glide.core.min.css'
-// import '../../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css'
 
-import Glide from '@glidejs/glide'
 
-const glide = new Glide('.glide', {
-    type: 'carousel',
-    startAt: 0,
-    perView: 3,
-    focusAt: 1,
-    gap: 16,
-    autoplay: 5000,
-    animationDuration: 600,
-    peek: 100,
-    breakpoints:
-    {
-        1200: {
-            perView: 3,
-            gap: 8,
-            peek: 50,
-        },
+import { GhApi } from '../../js/modules/GhApi';
+import { owner, repo, container, points } from '../../js/constants/constants.js';
+import { CommitCard } from '../../js/components/CommitCard.js';
+import { CommitCardList } from '../../js/components/CommitCardList.js'
 
-        1020: {
-            perView: 2,
-            gap: 6,
-            peek: 100,
-        },
+const commits = new GhApi(owner, repo)
+commits.getCommit()
+    .then(data => createApiCard(data))
 
-        820:{
-            perView: 2,
-            gap: 6,
-            peek: 50,
-        },
-
-        768:{
-            perView: 2,
-            gap: 6,
-            peek: 
-            {
-                before: 0,
-                after: 50 
-            },
-        },
-
-        740: {
-            perView: 2,
-            gap: 8,
-            peek: 0,
-        },
-
-        700: {
-            perView: 1,
-            gap: 0,
-            peek: 0
+function createApiCard(data) {
+    const arr = [];
+    const dataLength = data.length
+    data.forEach(item => {
+        const commitData = {
+            name: item.commit.committer.name,
+            email: item.commit.committer.email,
+            date: item.commit.committer.date,
+            message: item.commit.message,
+            img: item.author.avatar_url,
+            url: item.html_url,
         }
-    },
-    width: 200,
-})
+        const card = new CommitCard(commitData);
+        const cardsNode = card.create();
+        arr.push(cardsNode);
+    })
+    addToList(arr, dataLength);
+}
 
-// const Example = function (Glide, Components, Events) {
-//     return {
-//         mount() {
-//             console.log(Components.Sizes.slideWidth)
-//             Components.Sizes.setupSlides(400)
-//         }
-//     }
-// }
-
-// new Glide('.glide', 'Sizes').mount({
-//     'Example': Example
-// })
-  
-glide.mount()
+function addToList(arrCardsNode, dataLength) {
+    const list = new CommitCardList(arrCardsNode, container, dataLength, points)
+    list.render()
+    list.addPoints()
+    list.glide();
+}

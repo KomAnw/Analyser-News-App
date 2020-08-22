@@ -1,10 +1,11 @@
 import { NewsApi } from '../../js/modules/NewsApi.js';
-import { Card } from '../components/Card.js'
+import { NewsCard } from '../components/NewsCard.js'
 import { NewsCardList } from '../components/NewsCardList.js'
 
 import { result, preloader, nothingFound, searchButton } from '../constants/constants.js'
 
 let arrCardsNode = [];
+let arrSorage = [];
 
 const date = new Date();
 
@@ -97,15 +98,19 @@ export function searchCallback(url, inputValue) {
                 url: item.url,
             }
 
-            const card = new Card(newsData);
+            const card = new NewsCard(newsData);
             const cardsNode = card.create();
             arrCardsNode.push(cardsNode);
+            arrSorage.push(cardsNode)
         })
         addCardToList(arrCardsNode);
         arrCardsNode = [];
     }
 
     function pushDataToStorage(data, inputValue) {
+        sessionStorage.setItem('input', JSON.stringify(inputValue))
+        sessionStorage.setItem('data', JSON.stringify(data))
+
         const mentions = numberOfMentions(data, inputValue);
         const dateArr = dateForStatistics();
         const articlesOnDay = numberOfArticles(data);
@@ -122,7 +127,6 @@ export function searchCallback(url, inputValue) {
             graph: articlesOnDay,
             arrayDaysAndLines: arrayDaysAndLines,
         }
-
         const jsonObj = JSON.stringify(reqData)
         localStorage.setItem('analytics', jsonObj)
     }
@@ -130,7 +134,7 @@ export function searchCallback(url, inputValue) {
 
 function addCardToList(arrCardsNode) {
     const cardList = new NewsCardList(arrCardsNode, result)
-    cardList.setEventListener()
+    cardList.setEventListener();
     unblockSearchButton();
 }
 

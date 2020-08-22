@@ -48,7 +48,7 @@ export class SearchInput {
 
     setUserReq = () => {
         event.preventDefault();
-        this.url = 'http://newsapi.org/v2/everything?' +
+        this.url = 'https://nomoreparties.co/news/v2/everything?' +
         `q=${this.inputValue}&` + 
         `from=${actualDate}&` +
         `to=${futureDate}&` +

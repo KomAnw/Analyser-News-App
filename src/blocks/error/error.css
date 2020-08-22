@@ -19,3 +19,16 @@
 .error_active{
     bottom: -65%;
 }
+
+@media screen and (max-width: 480px) {
+    .error {
+        width: calc(96% - 80px);
+        border-radius: 50px 50px 0px 0px;
+        left: 27px;
+        bottom: 80px;
+    }
+    .error_active{
+        bottom: 100%;
+        
+    }
+}
