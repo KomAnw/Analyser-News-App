@@ -13,10 +13,13 @@ import { NewsCardList } from '../../js/components/NewsCardList.js'
 const search = new SearchInput(searchCallback, form)
 search.setEventListeners();
 
+if("input" in sessionStorage){
+    result.style.display = "flex";
+}
 
 window.onload = function () {
-    result.style.display = "flex";
-    const arrCardsNode = [];
+    if("data" in sessionStorage){
+        const arrCardsNode = [];
     const data = JSON.parse(sessionStorage.getItem('data'));
 
     data.articles.forEach(item => {
@@ -39,4 +42,5 @@ window.onload = function () {
 
     const input = JSON.parse(sessionStorage.getItem('input'));
     form.querySelector('input').value = input;
+    }
 }

@@ -59,24 +59,26 @@
     </section>
 
     <section class="about-author">
-        <img src="<%=require('../../images/author.png')%>" alt="author" class="about-author__author-pic">
+        <img src="<%=require('../../images/author.jpg')%>" alt="author" class="about-author__author-pic">
         <div class="about-author__description">
             <h2 class="about-author__titile">Об авторе</h2>
-            <p class="about-author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас
-                зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут
-                научились, и чем можете помочь потенциальным заказчикам.</p>
+            <p class="about-author__paragraph">Здравствуйте, меня зовут Комиссаров Герман, я frontend разработчик. В
+                настоящее время имею 7-ми месячный, учебный опыт от курсов Яндекс.Практикума, за это время изучил:
+                HTML5(семантическая верстка, дапативная, резиновая, кроссбраузерная), CSS3(Grid, flex-box, media
+                queries), JavaScript(ES6), RegExp, REST API, Git(GitHub), Webpack, есть опыт с npm, bash, Figma.</p>
+            <p class="about-author__paragraph">Посмотреть мои остальные работы можно на Github.</p>
         </div>
     </section>
 
     <section class="slider">
-            <h2 class="slider__title">История коммитов из GitHub</h2>
-            <a href="https://github.com/KomAnw/Analyser-News-App/commit/1615b50e0a6859cffbf4efe460089300691fc9ba" class="slider__github-link" target="_blank">Открыть в Github&nbsp;></a>
+        <h2 class="slider__title">История коммитов из GitHub</h2>
+        <a href="https://github.com/KomAnw/Analyser-News-App/commit/1615b50e0a6859cffbf4efe460089300691fc9ba"
+            class="slider__github-link" target="_blank">Открыть в Github&nbsp;></a>
         <div class="slider__container">
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
-                        
+
                     </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
@@ -94,15 +96,16 @@
         <ul class="footer__links">
             <li class="footer__page-link"><a href="./index.html" class="footer__link">Главная</a></li>
             <li class="footer__page-link"><a href="./about.html" class="footer__link">О проекте</a></li>
-            <li class="footer__page-link"><a href="https://praktikum.yandex.ru/"
-                    class="footer__link" target="_blank">Яндекс.Практикум</a></li>
+            <li class="footer__page-link"><a href="https://praktikum.yandex.ru/" class="footer__link"
+                    target="_blank">Яндекс.Практикум</a></li>
         </ul>
         <ul class="footer__links-social">
-            <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories"
-                    class="footer__link" target="_blank"><img src="<%=require('../../images/github.svg')%>" alt="github icon"
+            <li class="footer__social-links"><a href="https://github.com/KomAnw?tab=repositories" class="footer__link"
+                    target="_blank"><img src="<%=require('../../images/github.svg')%>" alt="github icon"
                         class="footer__img"></a></li>
-            <li class="footer__social-links"><a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank"><img
-                        src="<%=require('../../images/fb.svg')%>" alt="facebook icon" class="footer__img"></a></li>
+            <li class="footer__social-links"><a href="https://ru-ru.facebook.com/" class="footer__link"
+                    target="_blank"><img src="<%=require('../../images/fb.svg')%>" alt="facebook icon"
+                        class="footer__img"></a></li>
         </ul>
     </footer>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
